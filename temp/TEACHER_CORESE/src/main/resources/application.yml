@@ -1,0 +1,16 @@
+### MySQL连接信息
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/PROJECTMANAGE?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = GMT&allowPublicKeyRetrieval=true
+    username: root
+    password: Aa996260657
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  port: 8085
+  tomcat:
+    uri-encoding: utf-8
