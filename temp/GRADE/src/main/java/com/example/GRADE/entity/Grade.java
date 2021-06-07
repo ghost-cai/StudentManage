@@ -1,6 +1,11 @@
 package com.example.GRADE.entity;
 
 import javax.persistence.Entity;
+<<<<<<< Updated upstream
+=======
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+>>>>>>> Stashed changes
 import javax.persistence.Id;
 
 /**
@@ -12,10 +17,15 @@ import javax.persistence.Id;
 public class Grade {
 
     @Id
+<<<<<<< Updated upstream
+=======
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+>>>>>>> Stashed changes
     private int gradeId;
     private int sId;
     private String courseName;
     private Double finalGrade;
+<<<<<<< Updated upstream
     private int courseCode;
 
     public int getCourseCode() {
@@ -23,6 +33,25 @@ public class Grade {
     }
 
     public void setCourseCode(int courseCode) {
+=======
+    private String courseCode;
+
+    public Grade(int sid, String courseCode, String courseName) {
+        this.sId = sid;
+        this.courseCode = courseCode;
+        this.courseName = courseName;
+    }
+
+    public Grade() {
+
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+>>>>>>> Stashed changes
         this.courseCode = courseCode;
     }
 

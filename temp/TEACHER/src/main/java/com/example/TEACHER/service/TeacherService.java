@@ -33,6 +33,14 @@ public class TeacherService {
     }
 
     public void selectCourse(int tid, int cno) {
+<<<<<<< Updated upstream
         teacherDao.findByTidAndCno(tid,cno);
+=======
+//        teacherDao.findByTidAndCno(tid,cno);
+    }
+
+    public String findPasswordBytId(int id) {
+        return teacherDao.findPwdById(id);
+>>>>>>> Stashed changes
     }
 }

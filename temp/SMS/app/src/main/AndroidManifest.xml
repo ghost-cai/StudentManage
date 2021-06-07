@@ -14,7 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SMS">
+<<<<<<< Updated upstream
         <activity android:name=".activity.TeacherActivity"></activity>
+=======
+        <activity android:name=".activity.TeacherRecordActivity"></activity>
+        <activity android:name=".activity.StudentInquireScoreActivity" />
+        <activity android:name=".activity.StudentSelectCourseActivity" />
+        <activity android:name=".activity.TeacherActivity" />
+>>>>>>> Stashed changes
         <activity android:name=".activity.StudentActivity" />
         <activity android:name=".activity.LoginActivity">
             <intent-filter>

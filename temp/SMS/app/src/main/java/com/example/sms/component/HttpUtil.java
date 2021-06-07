@@ -22,6 +22,7 @@ public abstract class HttpUtil {
 
     private volatile String result = null;
 
+<<<<<<< Updated upstream
     public abstract void handle (String result);
 
     public HttpUtil(TextView wait, String service, String parameter){
@@ -35,6 +36,24 @@ public abstract class HttpUtil {
             try {
                 Thread.sleep(1000);
                 result = sendPost(service,parameter,null);
+=======
+    public abstract void handle(String result);
+
+    public HttpUtil(TextView wait, String service, String parameter) {
+        sendReq_t(wait, service, parameter);
+    }
+
+    //异步发送请求并回调处理方法
+    private void sendReq_t(TextView wait, String service, String parameter) {
+
+        Thread getData = new Thread(() -> {
+            try {
+                if (wait != null)
+                    Thread.sleep(1000);
+                else
+                    Thread.sleep(100);
+                result = sendPost(service, parameter, null);
+>>>>>>> Stashed changes
             } catch (InterruptedException | IOException e) {
                 e.printStackTrace();
             }
@@ -43,7 +62,12 @@ public abstract class HttpUtil {
         Thread waitData = new Thread(() -> {
             int count = 0;
             while (result == null) {
+<<<<<<< Updated upstream
                 setWaiting(count++, 300, wait);
+=======
+                if (wait != null)
+                    setWaiting(count++, 300, wait);
+>>>>>>> Stashed changes
             }
             handle(result);
         });
@@ -51,12 +75,21 @@ public abstract class HttpUtil {
         getData.start();
         waitData.start();
     }
+<<<<<<< Updated upstream
     
     //发送http get请求
     private String sendRequest(String service,String urlStr) {
         try {
             
             URL url = new URL(service+urlStr);
+=======
+
+    //发送http get请求
+    private String sendRequest(String service, String urlStr) {
+        try {
+
+            URL url = new URL(service + urlStr);
+>>>>>>> Stashed changes
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             InputStream inputStream = httpURLConnection.getInputStream();
             InputStreamReader reader = new InputStreamReader(inputStream, "UTF-8");
@@ -93,7 +126,11 @@ public abstract class HttpUtil {
         URLConnection conn = realUrl.openConnection();
         conn.setConnectTimeout(5000);
         conn.setReadTimeout(15000);
+<<<<<<< Updated upstream
         if (header!=null) {
+=======
+        if (header != null) {
+>>>>>>> Stashed changes
             for (Map.Entry<String, String> entry : header.entrySet()) {
                 conn.setRequestProperty(entry.getKey(), entry.getValue());
             }
@@ -113,17 +150,28 @@ public abstract class HttpUtil {
         while ((line = in.readLine()) != null) {
             result += line;
         }
+<<<<<<< Updated upstream
         if(out!=null){
             out.close();
         }
         if(in!=null){
+=======
+        if (out != null) {
+            out.close();
+        }
+        if (in != null) {
+>>>>>>> Stashed changes
             in.close();
         }
         return result;
     }
 
     private void setWaiting(int count, int sleepTime, TextView wait) {
+<<<<<<< Updated upstream
         int num = count%4;
+=======
+        int num = count % 4;
+>>>>>>> Stashed changes
         StringBuffer sb = new StringBuffer("waiting");
         for (int i = 0; i < num; i++) {
             sb.append(".");

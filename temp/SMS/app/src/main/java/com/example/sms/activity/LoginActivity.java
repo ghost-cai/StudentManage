@@ -19,6 +19,10 @@ import com.google.gson.Gson;
 
 import static com.example.sms.component.CONST.STUDENT;
 import static com.example.sms.component.CONST.TEACHER;
+<<<<<<< Updated upstream
+=======
+import static com.example.sms.component.CONST.userId;
+>>>>>>> Stashed changes
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -64,6 +68,10 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void handle(String result) {
                         if ("success".equals(result)) {
+<<<<<<< Updated upstream
+=======
+                            userId = id;
+>>>>>>> Stashed changes
                             if (isStudentChecked) {//打开学生窗口
                                 studentActivity.putExtra("id",id);
                                 startActivity(studentActivity);

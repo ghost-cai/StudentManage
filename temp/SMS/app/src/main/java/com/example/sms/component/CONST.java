@@ -9,5 +9,9 @@ public class CONST {
     public static String GRADE = IP+8084;
     public static String T_C = IP+8085;
 
+<<<<<<< Updated upstream
 
+=======
+    public static volatile int userId = -1;
+>>>>>>> Stashed changes
 }
