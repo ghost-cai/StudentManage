@@ -1,0 +1,40 @@
+com/example/sms/activity/StudentSelectCourseActivity.java
+ com.example.sms.activity.StudentSelectCourseActivity
+ com.example.sms.activity.StudentSelectCourseActivity$1
+ com.example.sms.activity.StudentSelectCourseActivity$2
+ com.example.sms.activity.StudentSelectCourseActivity$2$1
+com/example/sms/activity/StudentActivity.java
+ com.example.sms.activity.StudentActivity
+com/example/sms/entity/Grade.java
+ com.example.sms.entity.Grade
+com/example/sms/component/CONST.java
+ com.example.sms.component.CONST
+com/example/sms/component/HttpUtil.java
+ com.example.sms.component.HttpUtil
+com/example/sms/activity/TeacherActivity.java
+ com.example.sms.activity.TeacherActivity
+com/example/sms/entity/Student.java
+ com.example.sms.entity.Student
+com/example/sms/component/SCAdapter.java
+ com.example.sms.component.SCAdapter
+com/example/sms/entity/Teacher.java
+ com.example.sms.entity.Teacher
+com/example/sms/activity/LoginActivity.java
+ com.example.sms.activity.LoginActivity
+ com.example.sms.activity.LoginActivity$1
+ com.example.sms.activity.LoginActivity$1$1
+com/example/sms/entity/TeachCourse.java
+ com.example.sms.entity.TeachCourse
+com/example/sms/component/ScoreAdapter.java
+ com.example.sms.component.ScoreAdapter
+com/example/sms/activity/TeacherRecordActivity.java
+ com.example.sms.activity.TeacherRecordActivity
+ com.example.sms.activity.TeacherRecordActivity$1
+com/example/sms/entity/Course.java
+ com.example.sms.entity.Course
+com/example/sms/activity/StudentInquireScoreActivity.java
+ com.example.sms.activity.StudentInquireScoreActivity
+ com.example.sms.activity.StudentInquireScoreActivity$1
+ com.example.sms.activity.StudentInquireScoreActivity$1$1
+com/example/sms/BuildConfig.java
+ com.example.sms.BuildConfig
